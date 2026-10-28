@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinh phục Lịch sử & Địa lý 5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header chính -->
+  <header>
+    <h1>🏆 Chinh phục Lịch sử & Địa lý Lớp 5</h1>
+    <p>Website học tập tương tác & Trò chơi kiến thức số</p>
+  </header>
+
+  <!-- Bố cục chính -->
+  <div class="main-container">
+    <!-- Thanh điều hướng Sidebar -->
+    <nav class="sidebar">
+      <h3>Danh mục Chủ đề</h3>
+      <ul>
+        <li><button class="nav-btn active" onclick="showTab('chude1', event)">Đất nước & Con người VN</button></li>
+        <li><button class="nav-btn" onclick="showTab('chude2', event)">Quốc gia đầu tiên</button></li>
+        <li><button class="nav-btn" onclick="showTab('chude3', event)">Xây dựng & Bảo vệ Tổ quốc</button></li>
+        <li><button class="nav-btn" onclick="showTab('quiz', event)">🎮 Góc Trò chơi / Quiz</button></li>
+      </ul>
+    </nav>
+
+    <!-- Khu vực nội dung -->
+    <main class="content">
+      <section id="chude1" class="tab-content active">
+        <h2>Chủ đề 1: Đất nước và Con người Việt Nam</h2>
+        <p>Tìm hiểu về vị trí địa lý, lãnh thổ, khí hậu, sông ngòi, biển đảo và phân bố dân cư Việt Nam.</p>
+        <div class="card">
+          <iframe title="Bản đồ số Việt Nam" src="[suspicious link removed]" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <section id="chude2" class="tab-content">
+        <h2>Chủ đề 2: Những quốc gia đầu tiên trên lãnh thổ Việt Nam</h2>
+        <p>Khám phá sự ra đời và hiện vật tiêu biểu của Nhà nước Văn Lang, Âu Lạc, Vương quốc Phù Nam và Chăm-pa.</p>
+      </section>
+
+      <section id="chude3" class="tab-content">
+        <h2>Chủ đề 3: Xây dựng và Bảo vệ Đất nước Việt Nam</h2>
+        <p>Tái hiện các mốc lịch sử hào hùng: Đấu tranh chống Bắc thuộc, Triều Lý, Triều Trần và Khởi nghĩa Lam Sơn.</p>
+      </section>
+
+      <section id="quiz" class="tab-content">
+        <h2>🎮 Trò chơi Trắc nghiệm Lịch sử - Địa lý</h2>
+        <div id="quiz-container">
+          <p id="question">Đang tải câu hỏi...</p>
+          <div id="answers" class="answers-grid"></div>
+          <p id="score-board">Điểm số hiện tại: <span id="score">0</span></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
